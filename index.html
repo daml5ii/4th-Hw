@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <title>4th H.W</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form method="get" action="get_action.php" target="_blank">
+        <h2>GET Form</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form method="post" action="post_action.php" target="_self">
+        <h2>POST Form</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
